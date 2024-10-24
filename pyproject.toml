@@ -5,6 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "dash>=2.18.1",
+    "matplotlib>=3.9.2",
+    "shiny>=1.1.0",
     "streamlit>=1.39.0",
 ]
 
