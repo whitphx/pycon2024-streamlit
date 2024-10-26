@@ -1,6 +1,5 @@
-def main():
-    print("Hello from pycon2024-streamlit!")
+import streamlit as st
 
+st.title("Hello PyConFR :rainbow[2024]!")
 
-if __name__ == "__main__":
-    main()
+st.markdown("This is our **first** [Streamlit](https://streamlit.io/) app :balloon:")
