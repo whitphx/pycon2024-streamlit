@@ -1,16 +1,9 @@
 import streamlit as st
-import random
 import time
 from collections import deque
-from datetime import datetime
+from data_source import get_stock_data
 
-st.title("Real-Time Stock Price Dashboard")
-
-def get_stock_data():
-    """Returns a simulated stock price."""
-    timestamp = datetime.now()
-    price = random.uniform(10, 30)  # Simulate price variation around 100
-    return timestamp, price
+st.title("Data Streaming Dashboard")
 
 max_rows = 100
 stock_data = deque(maxlen=max_rows)

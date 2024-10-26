@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 class MockEventDispatcher:
-    def __init__(self, interval=0.5):
+    def __init__(self, interval=0.01):
         self.callbacks = []
         self.interval = interval
         self.running = False
@@ -27,7 +27,8 @@ class MockEventDispatcher:
     def _run(self):
         """Run the dispatcher to generate and dispatch mock data."""
         while self.running:
-            time.sleep(random.uniform(0.01, self.interval))  # Simulate event timing
+            # time.sleep(random.uniform(0.01, self.interval))  # Simulate event timing
+            time.sleep(self.interval)
             timestamp, price = self._get_stock_data()
             # Notify all subscribers (callbacks) with mock stock data
             for callback in self.callbacks:
