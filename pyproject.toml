@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "dash>=2.18.1",
     "fastapi>=0.115.3",
+    "gradio>=5.4.0",
     "matplotlib>=3.9.2",
     "shiny>=1.1.0",
     "streamlit>=1.39.0",
